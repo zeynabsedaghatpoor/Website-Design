@@ -1,0 +1,345 @@
+.navbar a.active {
+    color: #2f6b63;
+    text-decoration: underline;
+}
+
+.contact-section {
+    position: relative;
+
+    width: 100%;
+
+    padding: 10px 0 0;
+
+    overflow: hidden;
+}
+
+
+/* Decorative leaf branches */
+
+.leaf-decor {
+    position: absolute;
+
+    top: 20px;
+
+    width: 26%;
+    height: auto;
+
+    opacity: 0.85;
+
+    z-index: 0;
+
+    pointer-events: none;
+}
+
+.leaf-decor-left {
+    left: -6%;
+}
+
+.leaf-decor-right {
+    right: -6%;
+
+    transform: scaleX(-1);
+}
+
+
+/* Foreground content sits above the leaves */
+
+.contact-inner {
+    position: relative;
+    z-index: 1;
+
+    padding: 0 30px 50px;
+
+    text-align: center;
+}
+
+
+.contact-leaf-icon {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 10px;
+}
+
+
+.contact-title {
+    margin-top: 6px;
+
+    color: #2f6b63;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+
+.contact-desc {
+    margin-top: 10px;
+
+    direction: rtl;
+
+    font-family: 'Vazirmatn', 'Poppins', sans-serif;
+
+    font-size: 12px;
+    line-height: 1.9;
+
+    color: #444;
+}
+
+
+/* ============= CONTACT CARD ============= */
+
+.contact-card {
+    margin: 22px auto 0;
+
+    width: 100%;
+    max-width: 280px;
+
+    padding: 18px 16px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    background-color: #F8F0EA;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    direction: rtl;
+}
+
+
+.contact-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.contact-icon {
+    flex-shrink: 0;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #E6EDE9;
+}
+
+
+.contact-text {
+    text-align: right;
+}
+
+
+.contact-label {
+    font-family: 'Vazirmatn', 'Poppins', sans-serif;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    color: #2f6b63;
+}
+
+
+.contact-value {
+    margin-top: 2px;
+
+    font-family: 'Vazirmatn', 'Poppins', sans-serif;
+
+    font-size: 11px;
+
+    color: #444;
+}
+
+
+/* ======== HOURS HEADING ========== */
+
+.hours-heading {
+    margin-top: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+}
+
+
+.hours-heading span {
+    width: 55px;
+    height: 1px;
+
+    background-color: #c9a893;
+}
+
+
+.hours-heading h2 {
+    font-family: 'Vazirmatn', 'Poppins', sans-serif;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #333;
+
+    white-space: nowrap;
+}
+
+
+/* ================ FOOTER =============== */
+
+.site-footer {
+    width: 100%;
+
+    margin-top: -10px;
+}
+
+
+.footer-img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+/* ============== DARK MODE — CONTACT ============= */
+
+.page.dark-mode {
+    background-color: #07101F;
+    color: #E8CBA9;
+}
+
+
+/* ================ HEADER ============== */
+
+.page.dark-mode .header {
+    background-color: #0B1628;
+}
+
+.page.dark-mode .navbar a {
+    color: #E8CBA9;
+}
+
+.page.dark-mode .navbar a.active {
+    color: #6FA9A5;
+}
+
+
+/* ========== LOGO ============== */
+
+.page.dark-mode .logo svg {
+    stroke: #438C91;
+}
+
+
+/* ============ HERO =========== */
+
+.page.dark-mode .hero {
+    background-color: #07101F;
+}
+
+
+/* ============ CONTACT ============ */
+
+.page.dark-mode .contact-section {
+    background-color: #07101F;
+}
+
+
+.page.dark-mode .contact-title {
+    color: #438C91;
+}
+
+
+.page.dark-mode .contact-desc {
+    color: #CBBBAA;
+}
+
+
+/* ========== LEAF DECOR ========== */
+
+.page.dark-mode .leaf-decor {
+    opacity: 0.45;
+}
+
+
+/* ============== LEAF ICON ================ */
+
+.page.dark-mode .contact-leaf-icon svg {
+    stroke: #6D9B72;
+}
+
+
+/* =================== CONTACT CARD ================= */
+
+.page.dark-mode .contact-card {
+    background-color: #101C2C;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+
+/* =================== CONTACT ICON ================= */
+
+.page.dark-mode .contact-icon {
+    background-color: #182A32;
+}
+
+
+.page.dark-mode .contact-icon svg {
+    stroke: #6D9B72;
+}
+
+
+/*==================  CONTACT TEXT ============== */
+
+.page.dark-mode .contact-label {
+    color: #6FA9A5;
+}
+
+
+.page.dark-mode .contact-value {
+    color: #D3C4B5;
+}
+
+
+/* ============ HOURS ============ */
+
+.page.dark-mode .hours-heading span {
+    background-color: #756F67;
+}
+
+
+.page.dark-mode .hours-heading h2 {
+    color: #E8CBA9;
+}
+
+
+/* ==================== SMOOTH TRANSITION ======================== */
+
+.page,
+.page .header,
+.page .contact-section,
+.page .contact-card,
+.page .contact-icon,
+.page .navbar a,
+.page .contact-title,
+.page .contact-desc,
+.page .contact-label,
+.page .contact-value,
+.page .hours-heading h2 {
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blue Aura Café</title>
+
+
+    <!-- ================= GOOGLE FONTS ================= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ================= CSS ================= -->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+    <!-- ======== HEADER ============ -->
+
+    <header class="header">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="blueaura.html"
+            class="logo"
+            aria-label="Blue Aura Café home"
+        >
+
+            <svg
+                viewBox="0 0 48 48"
+                width="34"
+                height="34"
+                fill="none"
+                stroke="#2f6b63"
+                stroke-width="2"
+                class="logo-svg"
+            >
+
+                <path
+                    d="M10 18h22v10a11 11 0 0 1-11 11 11 11 0 0 1-11-11V18z"
+                />
+
+                <path
+                    d="M32 20h3a5 5 0 0 1 0 10h-3"
+                />
+
+                <path
+                    d="M14 6c0 2-3 3-3 6s3 4 3 6"
+                    stroke-linecap="round"
+                />
+
+                <path
+                    d="M22 6c0 2-3 3-3 6s3 4 3 6"
+                    stroke-linecap="round"
+                />
+
+            </svg>
+
+        </a>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navbar">
+
+            <a href="blueaura.html">Home</a>
+
+            <a href="menu.html">Menu</a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="about.html">About Us</a>
+
+        </nav>
+
+
+
+        <!-- ================= THEME BUTTON ================= -->
+
+        <button
+            class="theme-button"
+            id="themeButton"
+            aria-label="Change theme"
+        >
+
+            <span id="themeIcon">☼</span>
+
+        </button>
+
+
+    </header>
+
+
+
+    <!-- ==================  HERO =================== -->
+
+    <section class="hero">
+
+
+        <img
+            id="heroImage"
+            src="images/hero-final.png"
+            alt="Blue Aura Café"
+            class="hero-image"
+        >
+
+
+        <!-- HERO TITLE -->
+
+        <img
+            id="heroTitleImg"
+            src="images/hero-text.png"
+            alt="Blue Aura Café"
+            class="hero-title-img"
+        >
+
+
+    </section>
+
+
+
+    <!-- =========== CATEGORIES ============= -->
+
+    <section class="categories">
+
+
+        <h2>
+            Popular Categories
+        </h2>
+
+
+
+        <div class="popular-categories">
+
+
+            <!-- COFFEE -->
+
+            <div class="category">
+
+                <img
+                    src="images/category-coffee.jpg"
+                    alt="Coffee"
+                    class="category-image"
+                    data-day="images/category-coffee.jpg"
+                    data-night="images/category-coffee-night.jpg"
+                >
+
+                <p>Coffee</p>
+
+            </div>
+
+
+
+            <!-- DESSERTS -->
+
+            <div class="category">
+
+                <img
+                    src="images/desserts.jpg"
+                    alt="Desserts"
+                    class="category-image"
+                    data-day="images/desserts.jpg"
+                    data-night="images/desserts-night.jpg"
+                >
+
+                <p>Desserts</p>
+
+            </div>
+
+
+
+            <!-- SNACKS -->
+
+            <div class="category">
+
+                <img
+                    src="images/snacks.jpg"
+                    alt="Snacks"
+                    class="category-image"
+                    data-day="images/snacks.jpg"
+                    data-night="images/snacks-night.jpg"
+                >
+
+                <p>Snacks</p>
+
+            </div>
+
+
+
+            <!-- COLD DRINKS -->
+
+            <div class="category">
+
+                <img
+                    src="images/cold-drinks.jpg"
+                    alt="Cold Drinks"
+                    class="category-image"
+                    data-day="images/cold-drinks.jpg"
+                    data-night="images/cold-drinks-night.jpg"
+                >
+
+                <p>Cold Drinks</p>
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- ============ EXPLORE ============ -->
+
+    <section class="explore">
+
+
+        <div class="explore-line">
+
+            <span></span>
+
+            <div class="heart">
+                ♡
+            </div>
+
+            <span></span>
+
+        </div>
+
+
+        <h2>
+            Explore Our
+        </h2>
+
+
+    </section>
+
+
+
+    <!-- ========= MENU ========== -->
+
+    <section class="menu">
+
+
+        <img
+            id="menuDecorImg"
+            src="images/menu-full.png"
+            alt="Menu"
+            class="menu-decor-img"
+        >
+
+
+        <!-- Shown only in dark mode: the night blob image has
+             no MENU text / leaf divider baked into it -->
+
+        <h2 class="menu-title-dark">MENU</h2>
+
+        <div class="menu-leafline-dark">
+            <span></span>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#d9bd93" stroke-width="1.4">
+                <path d="M4 20c8-1 14-7 15-15-8 1-14 7-15 15z"/>
+                <path d="M6 18c3-4 6-7 11-11" stroke-linecap="round"/>
+            </svg>
+            <span></span>
+        </div>
+
+
+        <p class="menu-desc">
+
+            Discover our full menu and find
+
+            <br>
+
+            your perfect choice.
+
+        </p>
+
+
+
+        <a
+            href="menu.html"
+            class="menu-button"
+        >
+
+            <span class="btn-label">
+                VIEW FULL MENU
+            </span>
+
+
+            <span class="arrow-circle">
+
+                <i class="arrow-icon">
+                    →
+                </i>
+
+            </span>
+
+        </a>
+
+
+    </section>
+
+
+</div>
+
+
+
+<!-- ================= JAVASCRIPT ================== -->
+
+<script>
+
+    const page =
+        document.querySelector('.page');
+
+    const themeButton =
+        document.getElementById('themeButton');
+
+    const themeIcon =
+        document.getElementById('themeIcon');
+
+    const heroImage =
+        document.getElementById('heroImage');
+
+    const heroTitleImg =
+        document.getElementById('heroTitleImg');
+
+    const menuDecorImg =
+        document.getElementById('menuDecorImg');
+
+
+    /*============== LOAD SAVED THEME ================ */
+
+    const savedTheme =
+        localStorage.getItem('theme');
+
+
+    if (savedTheme === 'dark') {
+
+        page.classList.add('dark-mode');
+
+        themeIcon.textContent = '☾';
+
+        heroImage.src =
+            'images/night-hero.png';
+
+        heroTitleImg.style.display = 'none';
+
+        menuDecorImg.src =
+            'images/menu-full-dark.png';
+
+    }
+
+
+    /* ================= CHANGE THEME =========== */
+
+    themeButton.addEventListener('click', function () {
+
+        page.classList.toggle('dark-mode');
+
+
+        const isDark =
+            page.classList.contains('dark-mode');
+
+
+        if (isDark) {
+
+            /* NIGHT */
+
+            themeIcon.textContent = '☾';
+
+            heroImage.src =
+                'images/night-hero.png';
+
+            heroTitleImg.style.display = 'none';
+
+            menuDecorImg.src =
+                'images/menu-full-dark.png';
+
+            localStorage.setItem(
+                'theme',
+                'dark'
+            );
+
+
+        } else {
+
+            /* DAY */
+
+            themeIcon.textContent = '☼';
+
+            heroImage.src =
+                'images/hero-final.png';
+
+            heroTitleImg.style.display = 'block';
+
+            menuDecorImg.src =
+                'images/menu-full.png';
+
+            localStorage.setItem(
+                'theme',
+                'light'
+            );
+
+        }
+
+    });
+
+</script>
+</body>
+
+</html>
