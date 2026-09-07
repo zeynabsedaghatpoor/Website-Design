@@ -1,0 +1,740 @@
+@font-face {
+    font-family: 'Caveat';
+    src: url('fonts/caveat-v18-latin-600.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('fonts/caveat-v18-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/playfair-display-v37-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('fonts/playfair-display-v37-latin-900.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ======= SMOOTH SCROLL ========*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ========= BODY ============ */
+
+body {
+    background-color: #eccfbdb8;
+
+    font-family: 'Poppins', sans-serif;
+
+    color: #111;
+}
+
+
+/* ========== PAGE ============ */
+
+.page {
+    width: 100%;
+    max-width: 366px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background-color: #EACDBD;
+}
+
+
+/* =============== HEADE============ */
+
+.header {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 12px;
+
+    background-color: #EACDBD;
+}
+
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+}
+
+
+/* Navigation */
+
+.navbar {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+}
+
+
+.navbar a {
+    text-decoration: none;
+
+    color: #000;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* Sun / Theme Toggle */
+
+.sun {
+    border: none;
+    background: none;
+    padding: 0;
+
+    color: #4f7937;
+
+    font-size: 42px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+
+
+/* ============ HERO ============ */
+
+.hero {
+    position: relative;
+
+    width: 100%;
+}
+
+
+.hero-image {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* Hero Title Image */
+
+.hero-title-img {
+    position: absolute;
+
+    left: 3%;
+    top: 20%;
+
+    width: 52%;
+    height: auto;
+
+    z-index: 3;
+}
+
+
+/*================ CATEGORIES =========== */
+
+.categories {
+    width: 100%;
+
+    padding: 15px 15px 0;
+
+    text-align: center;
+}
+
+
+.categories > h2 {
+    margin-bottom: 45px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    text-decoration: underline;
+}
+
+
+/* Categories Container */
+
+.popular-categories {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 8px;
+}
+
+
+/* Individual Category */
+
+.category {
+    width: 25%;
+
+    text-align: center;
+}
+
+
+/* Category Images */
+
+.category img {
+    width: 63px;
+    height: 60px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+
+/* Category Text */
+
+.category p {
+    margin-top: 8px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 10px;
+}
+
+
+/* ========== EXPLORE ============== */
+
+.explore {
+    padding: 25px 40px 0;
+
+    text-align: center;
+}
+
+
+/* Lines + Heart */
+
+.explore-line {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.explore-line span {
+    flex: 1;
+
+    height: 2px;
+
+    background-color: #d88972;
+}
+
+
+/* Heart */
+
+.heart {
+    color: #d88972;
+
+    font-size: 40px;
+
+    line-height: 1;
+}
+
+
+/* Explore Our */
+
+.explore h2 {
+    margin-top: 5px;
+
+    color: #287d7c;
+
+    font-family: 'Caveat', cursive;
+
+    font-size: 21px;
+    font-weight: 600;
+}
+
+
+/* ========== MENU============ */
+
+.menu {
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    background-color: transparent;
+}
+
+
+/* Decoration image (MENU text + leaf divider + button shape + sparks) */
+
+.menu-decor-img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* Description text — sits in the blank gap between the leaf
+   divider and the button inside the decoration image */
+
+.menu-desc {
+    position: absolute;
+
+    top: 45%;
+    left: 8%;
+    right: 8%;
+
+    transform: translateY(-50%);
+
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 16px;
+    line-height: 1.3;
+
+    color: #111;
+}
+
+
+/* Menu Button — transparent overlay positioned exactly over
+   the teal pill already drawn in the decoration image */
+
+.menu-button {
+    box-sizing: border-box;
+
+    position: absolute;
+
+    top: 58.84%;
+    left: 27.66%;
+
+    width: 44.63%;
+    height: 12.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10% 0 7%;
+
+    background-color: transparent;
+
+    color: white;
+    text-decoration: none;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 11px;
+
+    cursor: pointer;
+}
+
+
+.btn-label {
+    white-space: nowrap;
+}
+
+
+/* Arrow Circle */
+
+.arrow-circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    height: 62%;
+    aspect-ratio: 1 / 1;
+
+    border-radius: 50%;
+    border: 2px solid #438c91;
+
+    background-color: #E6E0DB;
+
+    color: #438c91;
+
+    font-size: 140%;
+    line-height: 1;
+}
+
+
+/* Arrow Glyph (nudged up independently of the circle) */
+
+.arrow-icon {
+    display: inline-block;
+
+    font-style: normal;
+
+    transform: translateY(-4%);
+}
+
+
+/* ========== FULL MENU =========== */
+
+.full-menu {
+    width: 100%;
+
+    padding: 45px 22px 60px;
+
+    background-color: #EACDBD;
+}
+
+
+.full-menu > h2 {
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+/* Group (Coffee / Desserts / Snacks / Cold Drinks) */
+
+.menu-group {
+    margin-bottom: 30px;
+}
+
+
+.menu-group h3 {
+    margin-bottom: 14px;
+
+    color: #287d7c;
+
+    font-family: 'Caveat', cursive;
+
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+
+/* ========= DARK THEME========= */
+
+body.dark-theme {
+    background-color: #0e1626;
+}
+
+body.dark-theme .page {
+    background-color: #0e1626;
+}
+
+
+/* Header */
+
+body.dark-theme .header {
+    background-color: #0e1626;
+}
+
+body.dark-theme .navbar a {
+    color: #d9bd93;
+}
+
+body.dark-theme .logo svg {
+    stroke: #7fb3ad;
+}
+
+body.dark-theme .sun {
+    color: #d9bd93;
+}
+
+
+/* Categories */
+
+body.dark-theme .categories > h2 {
+    color: #d9bd93;
+}
+
+
+/* Explore */
+
+body.dark-theme .explore-line span {
+    background-color: #7a5c47;
+}
+
+body.dark-theme .heart {
+    color: #7fb3ad;
+}
+
+body.dark-theme .explore h2 {
+    color: #7fb3ad;
+}
+
+
+/* Menu section text (decoration image itself stays as-is) */
+
+body.dark-theme .menu-desc {
+    color: #d9bd93;
+}
+
+
+/* Full menu page */
+
+body.dark-theme .full-menu {
+    background-color: #0e1626;
+}
+
+body.dark-theme .full-menu > h2,
+body.dark-theme .item-name {
+    color: #d9bd93;
+}
+
+body.dark-theme .item-price {
+    color: #7fb3ad;
+}
+
+body.dark-theme .dots {
+    border-bottom-color: #4a3c30;
+}
+
+/* MENU title/leaf-line overlays (dark theme only) */
+
+.menu-title-dark,
+.menu-leafline-dark {
+    display: none;
+}
+
+body.dark-theme .menu-title-dark {
+    display: block;
+
+    position: absolute;
+
+    top: 15%;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+    color: #f2e4c9;
+
+    z-index: 2;
+}
+
+body.dark-theme .menu-leafline-dark {
+    display: flex;
+
+    position: absolute;
+
+    top: 27%;
+    left: 20%;
+    right: 20%;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    z-index: 2;
+}
+
+body.dark-theme .menu-leafline-dark span {
+    flex: 1;
+
+    height: 1px;
+
+    background-color: #d9bd93;
+}
+
+body.dark-theme .menu-desc {
+    color: #d9bd93;
+}
+
+/* Menu button gets its own visible pill in dark theme, since
+   the dark blob image has no button drawn into it */
+
+body.dark-theme .menu-button {
+    background-color: #1c2f4a;
+
+    border: 1.5px solid #d9bd93;
+    border-radius: 30px;
+
+    color: #f2e4c9;
+}
+
+body.dark-theme .arrow-circle {
+    border-color: #d9bd93;
+
+    background-color: #0e1626;
+
+    color: #d9bd93;
+}
+
+/* =========DARK MODE MENU section overlays(matches the .page.dark-mode toggle class) ============== */
+
+.menu-title-dark,
+.menu-leafline-dark {
+    display: none;
+}
+
+.page.dark-mode .menu-title-dark {
+    display: block;
+
+    position: absolute;
+
+    top: 15%;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+    color: #f2e4c9;
+
+    z-index: 2;
+}
+
+.page.dark-mode .menu-leafline-dark {
+    display: flex;
+
+    position: absolute;
+
+    top: 27%;
+    left: 20%;
+    right: 20%;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    z-index: 2;
+}
+
+.page.dark-mode .menu-leafline-dark span {
+    flex: 1;
+
+    height: 1px;
+
+    background-color: #d9bd93;
+}
+
+.page.dark-mode .menu-desc {
+    color: #d9bd93;
+}
+
+.page.dark-mode .menu-button {
+    background-color: #1c2f4a;
+
+    border: 1.5px solid #d9bd93;
+    border-radius: 30px;
+
+    color: #f2e4c9;
+}
+
+.page.dark-mode .arrow-circle {
+    border-color: #d9bd93;
+
+    background-color: #0e1626;
+
+    color: #d9bd93;
+}
+
+/* Theme toggle button */
+
+.theme-button {
+    border: none;
+    background: none;
+    padding: 0;
+
+    color: #4f7937;
+
+    font-size: 42px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition: color 0.3s ease;
+}
+
+.page.dark-mode .theme-button {
+    color: #d9bd93;
+}
+
+/* ================= DARK MODE — page-wide colors ======================== */
+
+.page.dark-mode {
+    background-color: #0e1626;
+}
+
+.page.dark-mode .header {
+    background-color: #0e1626;
+}
+
+.page.dark-mode .navbar a {
+    color: #d9bd93;
+}
+
+.page.dark-mode .logo-svg {
+    stroke: #7fb3ad;
+}
+
+.page.dark-mode .categories > h2 {
+    color: #d9bd93;
+}
+
+.page.dark-mode .category p {
+    color: #d9bd93;
+}
+
+.page.dark-mode .explore-line span {
+    background-color: #7a5c47;
+}
+
+.page.dark-mode .heart {
+    color: #7fb3ad;
+}
+
+.page.dark-mode .explore h2 {
+    color: #7fb3ad;
+}

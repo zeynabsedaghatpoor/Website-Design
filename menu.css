@@ -1,0 +1,560 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ========= BODY ========= */
+
+body {
+    background-color: #eccfbdb8;
+
+    font-family: 'Poppins', sans-serif;
+
+    color: #111;
+}
+
+
+/* =========  PAGE ======== */
+
+.menu-page {
+    width: 100%;
+
+    max-width: 366px;
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background-color: #EACDBD;
+
+    padding-bottom: 35px;
+}
+
+
+/* ========== HEADER ========== */
+
+.menu-header {
+    position: relative;
+
+    width: 100%;
+
+    height: 88px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background-color: #F1DED2;
+
+    border-radius: 0 0 30px 30px;
+
+    box-shadow:
+        0 5px 4px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =========== BLUE AURA TITLE ======= */
+
+.menu-header h1 {
+    color: #438c91;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 39px;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+
+    text-shadow:
+        2px 3px 0 #d0a995;
+}
+
+
+/* ========= BACK BUTTON =========== */
+
+.back-button {
+    position: absolute;
+
+    left: 27px;
+
+    width: 32px;
+
+    height: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1.5px solid #438c91;
+
+    border-radius: 50%;
+
+    background-color: #F1DED2;
+
+    color: #438c91;
+
+    text-decoration: none;
+}
+
+
+.back-button span {
+    font-size: 32px;
+
+    line-height: 20px;
+
+    transform: translateY(-2px);
+}
+
+
+/* ========== CATEGORY BOX ========== */
+
+.menu-categories {
+    width: calc(100% - 40px);
+
+    margin: 14px auto 18px;
+
+    padding: 7px 5px 9px;
+
+    display: flex;
+
+    gap: 5px;
+
+    background-color: #F1DED2;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 3px 4px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ======= CATEGORY ======== */
+
+.category-card {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 2px;
+
+    text-decoration: none;
+
+    color: #263f3d;
+
+    text-align: center;
+
+    border: 2px solid transparent;
+
+    border-radius: 15px;
+
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* ============ ACTIVE CATEGORY ============= */
+
+.category-card.active {
+    border-color: #438c91;
+}
+
+
+/* ================== CATEGORY IMAGE ============= */
+
+.category-card img {
+    display: block;
+
+    width: 100%;
+
+    height: 58px;
+
+    object-fit: cover;
+
+    border-radius: 12px 12px 5px 5px;
+}
+
+
+/* ===============  CATEGORY TEXT ============== */
+
+.category-card span {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 30px;
+
+    margin-top: -1px;
+
+    background-color: #F1DED2;
+
+    border-radius: 0 0 8px 8px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+}
+
+
+/* ======== MENU SECTION =========== */
+
+.menu-section {
+    width: 100%;
+
+    padding: 0 25px;
+
+    scroll-margin-top: 15px;
+}
+
+
+/* ============ SECTION TITLE ============== */
+
+.section-title {
+    margin: 30px 0 15px;
+
+    color: #287d7c;
+
+    font-family: 'Caveat', cursive;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* ========== MENU ITEM CARD =========== */
+
+.menu-item {
+    width: 100%;
+
+    min-height: 88px;
+
+    margin-bottom: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    overflow: hidden;
+
+    background-color: #F8F0EA;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 2px 3px rgba(0, 0, 0, 0.18);
+}
+
+
+/* ================ ITEM INFORMATION =================== */
+
+.item-info {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 5px 7px 5px 8px;
+}
+
+
+/* ================== ITEM NAME =============== */
+
+.item-info h2 {
+    color: #214f4c;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 22px;
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    white-space: nowrap;
+}
+
+
+/* ================ DECORATIVE LINE================ */
+
+.item-line {
+    position: relative;
+
+    width: 125px;
+
+    height: 12px;
+
+    margin: 2px 0 1px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.item-line::before,
+.item-line::after {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    width: 48px;
+
+    height: 1px;
+
+    background-color: #8d8d82;
+}
+
+
+.item-line::before {
+    left: 0;
+}
+
+
+.item-line::after {
+    right: 0;
+}
+
+
+.item-line span {
+    position: relative;
+
+    z-index: 2;
+
+    padding: 0 4px;
+
+    color: #6d8d78;
+
+    font-size: 15px;
+
+    background-color: #F8F0EA;
+}
+
+
+/* ============ DESCRIPTION ============= */
+
+.item-info p {
+    color: #315b58;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 8px;
+
+    line-height: 1.25;
+
+    margin-bottom: 2px;
+}
+
+
+/* =============== PRICE================== */
+
+.item-info small {
+    color: #777;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 8px;
+}
+
+
+/* =============== PRODUCT IMAGE =============== */
+
+.menu-item > img {
+    width: 83px;
+
+    height: 83px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+
+    margin-right: 5px;
+}
+
+
+/* ============== MOBILE ============ */
+
+@media (max-width: 366px) {
+
+    .menu-header h1 {
+        font-size: 36px;
+    }
+
+    .menu-section {
+        padding: 0 24px;
+    }
+
+    .item-info h2 {
+        font-size: 21px;
+    }
+
+}
+
+/* ================== DARK MODE ================= */
+
+.menu-page.dark-mode {
+    background-color: #07101F;
+    color: #E8CBA9;
+}
+
+
+/* ==================== HEADER ================= */
+
+.menu-page.dark-mode .menu-header {
+    background-color: #0B1628;
+
+    box-shadow:
+        0 5px 4px rgba(0, 0, 0, 0.45);
+}
+
+
+.menu-page.dark-mode .menu-header h1 {
+    color: #438C91;
+
+    text-shadow:
+        2px 3px 0 #3A2924;
+}
+
+
+/* ================ BACK BUTTON ================ */
+
+.menu-page.dark-mode .back-button {
+    background-color: #0B1628;
+
+    border-color: #438C91;
+
+    color: #E8CBA9;
+}
+
+
+/* ================== CATEGORY BOX =================== */
+
+.menu-page.dark-mode .menu-categories {
+    background-color: #0F1A2A;
+
+    box-shadow:
+        0 3px 5px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ================ CATEGORY CARD ================ */
+
+.menu-page.dark-mode .category-card {
+    color: #E8CBA9;
+}
+
+
+/* ============= ACTIVE CATEGORY ============ */
+
+.menu-page.dark-mode .category-card.active {
+    border-color: #438C91;
+}
+
+
+/* ================ CATEGORY TEXT ============ */
+
+.menu-page.dark-mode .category-card span {
+    background-color: #0F1A2A;
+
+    color: #E8CBA9;
+}
+
+
+/* ============ SECTION TITLE ============== */
+
+.menu-page.dark-mode .section-title {
+    color: #6FA9A5;
+}
+
+
+/* ================ MENU ITEM =============== */
+
+.menu-page.dark-mode .menu-item {
+    background-color: #101C2C;
+
+    box-shadow:
+        0 3px 5px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ================= ITEM NAME ============ */
+
+.menu-page.dark-mode .item-info h2 {
+    color: #E8CBA9;
+}
+
+
+/* ===================== DECORATIVE LINE ================ */
+
+.menu-page.dark-mode .item-line::before,
+.menu-page.dark-mode .item-line::after {
+    background-color: #756F67;
+}
+
+
+.menu-page.dark-mode .item-line span {
+    color: #6D9B72;
+
+    background-color: #101C2C;
+}
+
+
+/* ======================== DESCRIPTION ================== */
+
+.menu-page.dark-mode .item-info p {
+    color: #CBBBAA;
+}
+
+
+/* =============== PRICE ================= */
+
+.menu-page.dark-mode .item-info small {
+    color: #A69C91;
+}
+
+
+/* =================== TRANSITION ================= */
+
+.menu-page,
+.menu-page .menu-header,
+.menu-page .menu-categories,
+.menu-page .category-card,
+.menu-page .category-card span,
+.menu-page .menu-item,
+.menu-page .item-line span,
+.menu-page .item-info h2,
+.menu-page .item-info p,
+.menu-page .item-info small,
+.menu-page .section-title {
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
