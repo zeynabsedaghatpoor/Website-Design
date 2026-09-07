@@ -1,0 +1,246 @@
+
+.about-section {
+    width: 100%;
+
+    padding: 20px 24px 40px;
+
+    text-align: center;
+}
+
+
+/* Divider with double-leaf icon */
+
+.about-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+}
+
+
+.about-divider span {
+    width: 70px;
+    height: 2px;
+
+    background-color: #2f6b63;
+}
+
+
+.about-title {
+    margin-top: 14px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 32px;
+    font-weight: 900;
+
+    color: #1a1a1a;
+}
+
+
+.about-subtitle {
+    margin-top: 6px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+
+/* ========================= OUR STORY ==================== */
+
+.story-block {
+    margin-top: 40px;
+}
+
+
+.story-title {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    color: #1a1a1a;
+}
+
+
+.story-photo-wrap {
+    position: relative;
+
+    width: 100%;
+    max-width: 280px;
+
+    margin: 26px auto 0;
+}
+
+
+.story-blob {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 125%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 0;
+}
+
+
+.story-photo {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+
+.story-text {
+    margin-top: 26px;
+
+    direction: rtl;
+
+    text-align: justify;
+
+    font-family: 'Vazirmatn', 'Poppins', sans-serif;
+
+    font-size: 12px;
+    line-height: 2.1;
+
+    color: #333;
+}
+
+
+/* ============== FEATURE CARDS ================= */
+
+.feature-grid {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 14px;
+}
+
+
+.feature-card {
+    padding: 20px 10px;
+
+    background-color: #F8F0EA;
+
+    border-radius: 18px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
+    direction: rtl;
+}
+
+
+.feature-icon {
+    width: 46px;
+    height: 46px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #E6EDE9;
+}
+
+
+.feature-card h3 {
+    margin-top: 10px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #1a1a1a;
+}
+
+
+.feature-dash {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #c9a893;
+
+    font-size: 10px;
+}
+
+
+.feature-card p {
+    margin-top: 6px;
+
+    font-family: 'Vazirmatn', 'Poppins', sans-serif;
+
+    font-size: 9.5px;
+    line-height: 1.7;
+
+    color: #555;
+}
+
+/* ======================== DARK MODE ======================== */
+
+.page.dark-mode .about-divider span {
+    background-color: #d9bd93;
+}
+
+.page.dark-mode .about-divider svg {
+    stroke: #d9bd93;
+}
+
+.page.dark-mode .about-title {
+    color: #f2e4c9;
+}
+
+.page.dark-mode .about-subtitle {
+    color: #a8a8a8;
+}
+
+.page.dark-mode .story-title {
+    color: #f2e4c9;
+}
+
+.page.dark-mode .story-text {
+    color: #c9c9c9;
+}
+
+.page.dark-mode .feature-card {
+    background-color: #1c2f4a;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.page.dark-mode .feature-icon {
+    background-color: #0e1626;
+}
+
+.page.dark-mode .feature-icon svg {
+    stroke: #7fb3ad;
+}
+
+.page.dark-mode .feature-card h3 {
+    color: #f2e4c9;
+}
+
+.page.dark-mode .feature-dash {
+    color: #d9bd93;
+}
+
+.page.dark-mode .feature-card p {
+    color: #c9c9c9;
+}
